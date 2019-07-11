@@ -1,0 +1,14 @@
+---
+  - name: Create interface config file
+    template:
+      src: "templates/ifcfg-eth1.j2"
+      dest: "{{ hetznernet_ifcfg_path }}"
+      owner: root
+      group: root
+      mode: '0600'
+
+  - name: Restart network
+    service:
+      name: network
+      state: restarted
+...

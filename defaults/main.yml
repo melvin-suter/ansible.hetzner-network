@@ -1,0 +1,4 @@
+---
+# --- user ---
+hetznernet_ifcfg : "eth1"
+hetznernet_ifcfg_path : "/etc/sysconfig/network-scripts/ifcfg-{{ hetznernet_ifcfg }}"

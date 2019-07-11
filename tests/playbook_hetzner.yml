@@ -1,0 +1,10 @@
+---
+# file: test/playbook_gitea.yml
+- name: create and configure hetzner's private network
+  hosts: 
+  - server.example.com
+  roles:
+    - role: melvin_suter.hetzner-network
+  vars:
+    
+...
