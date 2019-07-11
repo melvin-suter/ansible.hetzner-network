@@ -15,7 +15,7 @@ galaxy_info:
   - network
   - hetzner
 
-dependencies: []
+dependencies:
   - role: "melvin_suter.firewalld"
     vars:
       firewalld_interfaces:
